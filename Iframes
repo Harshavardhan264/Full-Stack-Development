@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frames</title>
+</head>
+<body>
+
+    <iframe src="https://codemithra.com/wp-content/uploads/2024/07/What-is-a-Full-Stack-Developer-jpg.webp" name="FSD" height="800px" width="100%" title="Iframe Example"></iframe>
+
+   <p><a href="https://codemithra.com/what-is-a-full-stack-developer/" target="iframe_a">codemithra</a></p>
+
+   <p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+
+    <noframes>
+        <body>
+            <p>Your browser does not support frames. Please upgrade your browser or use one that supports frames.</p>
+        </body>
+    </noframes>
+
+</body>
+</html>
