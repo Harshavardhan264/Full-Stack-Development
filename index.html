@@ -10,26 +10,26 @@
             margin: 0;
             padding: 0;
         }
-        .header {
+        header {
             background-color: #007bff;
             color: white;
             text-align: center;
             padding: 15px;
             font-size: 24px;
         }
-        .nav {
+        nav {
             display: flex;
             justify-content: center;
             background: lightgray;
             padding: 10px;
         }
-        .nav a {
+        nav a {
             margin: 0 15px;
             text-decoration: none;
             color: black;
             font-weight: bold;
         }
-        .container {
+        main {
             display: flex;
             justify-content: space-around;
             margin: 20px;
@@ -40,7 +40,7 @@
             border: 1px solid #ddd;
             background: #f9f9f9;
         }
-        .footer {
+        footer {
             text-align: center;
             padding: 10px;
             background: black;
@@ -60,32 +60,32 @@
 </head>
 <body>
 
-    <div class="header">Welcome to My Website</div>
+    <header>Welcome to My Website</header>
 
-    <div class="nav">
+    <nav>
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Contact</a>
-    </div>
+    </nav>
 
-    <div class="container">
-        <div class="box">
+    <main>
+        <article class="box">
             <h2>About Us</h2>
             <p>Welcome to our website! We are dedicated to providing the best services to our customers. Learn more about our journey and values. Here is a word with a <strong>highlight</strong> effect.</p>
-            <div class="image">
+            <figure class="image">
                 <img src="https://jaro-website.s3.ap-south-1.amazonaws.com/2024/07/full-stack-web-developer.png" alt="Full Stack Development">
-                <p>Our Team at Work</p>
-            </div>
-        </div>
+                <figcaption>Our Team at Work</figcaption>
+            </figure>
+        </article>
 
-        <div class="box">
+        <aside class="box">
             <h2>Latest News</h2>
             <p>Check out our latest updates on the website.</p>
-        </div>
-    </div>
+        </aside>
+    </main>
 
-    <div class="footer">&copy; 2024 My Website | All Rights Reserved</div>
+    <footer>&copy; 2024 My Website | All Rights Reserved</footer>
 
 </body>
 </html>
