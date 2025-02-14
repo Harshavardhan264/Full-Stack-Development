@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Style Types</title>
+    <!-- Internal Styles (placed within <style> tag in <head>) -->
+    <style>
+        /* Internal CSS */
+        .intro {
+            color: green; /* Property: color, Value: green */
+            font-size: 20px; /* Property: font-size, Value: 20px */
+        }
+
+        p {
+            font-family: Arial, sans-serif; /* Property: font-family, Value: Arial */
+            color: blue; /* Property: color, Value: blue */
+        }
+
+        .highlight {
+            background-color: yellow; /* Property: background-color, Value: yellow */
+        }
+    </style>
+</head>
+<body>
+    <!-- Inline Styles -->
+    <h1 style="color: red; text-align: center;">Inline Styles Example</h1> <!-- Selector: h1, Property: color, Value: red -->
+
+    <p class="intro">This is a paragraph styled with internal CSS.</p> <!-- Selector: .intro, Property: color, Value: green -->
+
+    <!-- Inline Style Example -->
+    <p style="font-weight: bold; color: purple;">This paragraph is styled using inline CSS.</p> <!-- Selector: p, Property: font-weight, Value: bold -->
+
+    <div class="highlight">
+        <p>This paragraph has a highlighted background using internal CSS.</p> <!-- Selector: .highlight, Property: background-color, Value: yellow -->
+    </div>
+
+    <!-- External Style Link -->
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS linked -->
+
+    <p>This paragraph will be styled by the external CSS file.</p>
+
+</body>
+</html>
