@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Forms</title>
+<style>
+  /* Simple Selectors */
+
+/*Element Selector */
+p {
+    color: blue;
+}
+
+/*ID Selector */
+#header {
+    font-size: 2em;
+    color: red;
+}
+
+/* Class Selector */
+.intro {
+    font-style: italic;
+    color: green;
+}
+
+/*Group Selector */
+h1, p {
+    font-family: Arial, sans-serif;
+}
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Combinator Selectors */
+
+/* Descendant Selector */
+.container p {
+    color: orange;
+}
+
+/* Child Selector */
+.container > p {
+    font-weight: bold;
+}
+
+/*  Adjacent Sibling Selector */
+section + p {
+    color: purple;
+}
+
+/*  General Sibling Selector */
+section ~ p {
+    font-size: 1.5em;
+}
+
+/* Pseudo-class Selectors */
+
+.input-field:focus {
+    border: 2px solid blue;
+}
+
+/*  Hover Pseudo-class */
+.example:hover {
+    color: magenta;
+}
+
+/* Pseudo-element Selectors */
+
+.example::after {
+    content: " - Pseudo-element Example!";
+    color: gray;
+}
+
+/* Attribute Selectors */
+
+input[type="text"] {
+    background-color: lightyellow;
+}
+
+</style>
+</head>
+<body>
+
+    <!-- Simple selectors -->
+    <h1 id="header">Welcome to CSS Selectors</h1>
+    <p class="intro">This is an introduction to different types of CSS selectors.</p>
+    <p class="info">Here we demonstrate the usage of various selectors.</p>
+
+    <div class="container">
+        <p>Element Selector</p>
+        <p>Child Selector Example</p>
+    </div>
+
+    <section class="test">
+        <p>Sibling Selectors Example</p>
+    </section>
+
+    <input type="text" value="Focus me!" class="input-field" />
+
+    <div class="example">
+        <p>Hover over this text to see pseudo-class and pseudo-element selector effect.</p>
+    </div>
+
+</body>
+</html>
